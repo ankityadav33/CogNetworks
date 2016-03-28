@@ -36,21 +36,6 @@
             this.node3 = new System.Windows.Forms.Button();
             this.node2 = new System.Windows.Forms.Button();
             this.node1 = new System.Windows.Forms.Button();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.link10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link14 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link13 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link12 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.link1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -89,6 +74,8 @@
             this.lblCounter = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.cboxStart = new System.Windows.Forms.ComboBox();
+            this.lblDistance = new System.Windows.Forms.Label();
+            this.txtRoute = new System.Windows.Forms.TextBox();
             this.cboxDestination = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -164,142 +151,6 @@
             this.node1.TabIndex = 0;
             this.node1.Text = "1";
             this.node1.UseVisualStyleBackColor = false;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.link10,
-            this.link14,
-            this.link13,
-            this.link6,
-            this.link9,
-            this.link5,
-            this.link11,
-            this.link12,
-            this.link8,
-            this.link7,
-            this.link2,
-            this.link4,
-            this.link3,
-            this.link1});
-            this.shapeContainer1.Size = new System.Drawing.Size(837, 375);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // link10
-            // 
-            this.link10.Name = "link10";
-            this.link10.X1 = 550;
-            this.link10.X2 = 641;
-            this.link10.Y1 = 257;
-            this.link10.Y2 = 171;
-            // 
-            // link14
-            // 
-            this.link14.Name = "link14";
-            this.link14.X1 = 257;
-            this.link14.X2 = 357;
-            this.link14.Y1 = 258;
-            this.link14.Y2 = 168;
-            // 
-            // link13
-            // 
-            this.link13.Name = "link13";
-            this.link13.X1 = 366;
-            this.link13.X2 = 382;
-            this.link13.Y1 = 175;
-            this.link13.Y2 = 254;
-            // 
-            // link6
-            // 
-            this.link6.Name = "link6";
-            this.link6.X1 = 374;
-            this.link6.X2 = 382;
-            this.link6.Y1 = 79;
-            this.link6.Y2 = 168;
-            // 
-            // link9
-            // 
-            this.link9.Name = "link9";
-            this.link9.X1 = 526;
-            this.link9.X2 = 534;
-            this.link9.Y1 = 80;
-            this.link9.Y2 = 254;
-            // 
-            // link5
-            // 
-            this.link5.Name = "link5";
-            this.link5.X1 = 402;
-            this.link5.X2 = 512;
-            this.link5.Y1 = 66;
-            this.link5.Y2 = 76;
-            // 
-            // link11
-            // 
-            this.link11.Name = "link11";
-            this.link11.X1 = 399;
-            this.link11.X2 = 512;
-            this.link11.Y1 = 254;
-            this.link11.Y2 = 267;
-            // 
-            // link12
-            // 
-            this.link12.Name = "link12";
-            this.link12.X1 = 269;
-            this.link12.X2 = 368;
-            this.link12.Y1 = 248;
-            this.link12.Y2 = 263;
-            // 
-            // link8
-            // 
-            this.link8.Name = "link8";
-            this.link8.X1 = 541;
-            this.link8.X2 = 639;
-            this.link8.Y1 = 82;
-            this.link8.Y2 = 174;
-            // 
-            // link7
-            // 
-            this.link7.Name = "link7";
-            this.link7.X1 = 392;
-            this.link7.X2 = 512;
-            this.link7.Y1 = 83;
-            this.link7.Y2 = 248;
-            // 
-            // link2
-            // 
-            this.link2.Name = "link2";
-            this.link2.X1 = 99;
-            this.link2.X2 = 250;
-            this.link2.Y1 = 174;
-            this.link2.Y2 = 267;
-            // 
-            // link4
-            // 
-            this.link4.Name = "link4";
-            this.link4.X1 = 255;
-            this.link4.X2 = 250;
-            this.link4.Y1 = 81;
-            this.link4.Y2 = 267;
-            // 
-            // link3
-            // 
-            this.link3.Name = "link3";
-            this.link3.X1 = 265;
-            this.link3.X2 = 368;
-            this.link3.Y1 = 76;
-            this.link3.Y2 = 79;
-            // 
-            // link1
-            // 
-            this.link1.Name = "link1";
-            this.link1.X1 = 114;
-            this.link1.X2 = 220;
-            this.link1.Y1 = 168;
-            this.link1.Y2 = 83;
             // 
             // lineShape1
             // 
@@ -639,6 +490,21 @@
             this.cboxStart.Size = new System.Drawing.Size(121, 21);
             this.cboxStart.TabIndex = 33;
             // 
+            // lblDistance
+            // 
+            this.lblDistance.AutoSize = true;
+            this.lblDistance.Location = new System.Drawing.Point(674, 327);
+            this.lblDistance.Name = "lblDistance";
+            this.lblDistance.Size = new System.Drawing.Size(0, 13);
+            this.lblDistance.TabIndex = 35;
+            // 
+            // txtRoute
+            // 
+            this.txtRoute.Location = new System.Drawing.Point(626, 346);
+            this.txtRoute.Name = "txtRoute";
+            this.txtRoute.Size = new System.Drawing.Size(163, 20);
+            this.txtRoute.TabIndex = 36;
+            // 
             // cboxDestination
             // 
             this.cboxDestination.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -653,10 +519,10 @@
             "7",
             "8",
             "9"});
-            this.cboxDestination.Location = new System.Drawing.Point(257, 19);
+            this.cboxDestination.Location = new System.Drawing.Point(264, 11);
             this.cboxDestination.Name = "cboxDestination";
             this.cboxDestination.Size = new System.Drawing.Size(121, 21);
-            this.cboxDestination.TabIndex = 34;
+            this.cboxDestination.TabIndex = 37;
             // 
             // Form1
             // 
@@ -664,6 +530,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 375);
             this.Controls.Add(this.cboxDestination);
+            this.Controls.Add(this.txtRoute);
+            this.Controls.Add(this.lblDistance);
             this.Controls.Add(this.cboxStart);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.lblCounter);
@@ -695,7 +563,6 @@
             this.Controls.Add(this.node3);
             this.Controls.Add(this.node2);
             this.Controls.Add(this.node1);
-            this.Controls.Add(this.shapeContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -714,7 +581,6 @@
         private System.Windows.Forms.Button node3;
         private System.Windows.Forms.Button node2;
         private System.Windows.Forms.Button node1;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape15;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape14;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape13;
@@ -731,20 +597,6 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button node9;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link14;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link13;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link6;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link9;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link5;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link11;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link12;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link8;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link7;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link4;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link3;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape link10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCalculate;
@@ -767,9 +619,9 @@
         private System.Windows.Forms.Label lblCounter;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox cboxStart;
+        private System.Windows.Forms.Label lblDistance;
+        private System.Windows.Forms.TextBox txtRoute;
         private System.Windows.Forms.ComboBox cboxDestination;
-
-
     }
 }
 

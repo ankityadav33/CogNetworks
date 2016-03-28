@@ -15,13 +15,18 @@ namespace CogNetworks
 
     public partial class Form1 : Form
     {
+
+        int current, prev, next, source, destination;
+        int counter = 0;
+        List<LinkTable> listtbl = new List<LinkTable>();
+
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        List<LinkTable> listtbl = new List<LinkTable>();
-
+        
         /// <summary>
         /// 
         /// </summary>
@@ -41,16 +46,10 @@ namespace CogNetworks
                         }).ToList();
             }
         }
-
-        int current, prev, next, source, destination;
-        int counter = 0;
-
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             reset();
-
-
         }
 
         void reset()
@@ -72,18 +71,18 @@ namespace CogNetworks
                     }
                 }
 
-                foreach (Object control in this.shapeContainer1.Shapes)
-                {
-                    if (control.GetType() == typeof(LineShape))
-                    {
-                        LineShape line = (LineShape)control;
+                //foreach (Object control in this.shapeContainer1.Shapes)
+                //{
+                //    if (control.GetType() == typeof(LineShape))
+                //    {
+                //        LineShape line = (LineShape)control;
                         
-                            line.BorderColor = Color.Black;
+                //            line.BorderColor = Color.Black;
                        
 
-                    }
+                //    }
 
-                }
+                //}
                 counter = 0;
                 lblCounter.Text = counter.ToString();
                 listtbl.Clear();
@@ -107,10 +106,17 @@ namespace CogNetworks
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
+            ShortestPathAlgo spa = new ShortestPathAlgo();
+            //get the source of the message
+            source = Convert.ToInt32(cboxStart.SelectedItem.ToString()) ;
+            destination = Convert.ToInt32(cboxDestination.SelectedItem.ToString());
+
+            lblDistance.Text=spa.dijkstra(source, destination).ToString();
+            txtRoute.Text = spa.route[destination-1];
             // source = Convert.ToInt32(txtSource.Text.ToString()) ;
             //destination = Convert.ToInt32(txtDestination.Text.ToString()) ;
-             reset();
-            listtbl = Get();
+            //reset();
+            //listtbl = Get();
             prev = -1;
             next = -1;
 
@@ -153,19 +159,19 @@ namespace CogNetworks
                     
                 }
 
-                foreach (Object control in this.shapeContainer1.Shapes)
-                {
-                    if (control.GetType() == typeof(LineShape))
-                    {
-                        LineShape line = (LineShape)control;
-                        if (line.Name.Equals("link" + link.ToString()))
-                        {
-                            line.BorderColor = Color.Red;
-                        }
+                //foreach (Object control in this.shapeContainer1.Shapes)
+                //{
+                //    if (control.GetType() == typeof(LineShape))
+                //    {
+                //        LineShape line = (LineShape)control;
+                //        if (line.Name.Equals("link" + link.ToString()))
+                //        {
+                //            line.BorderColor = Color.Red;
+                //        }
 
-                    }
+                //    }
 
-                }
+                //}
                 prev = current;
 
             }

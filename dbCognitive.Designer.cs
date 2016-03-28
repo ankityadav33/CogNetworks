@@ -176,7 +176,7 @@ namespace CogNetworks
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -193,7 +193,7 @@ namespace CogNetworks
             {
                 OnnameChanging(value);
                 ReportPropertyChanging("name");
-                _name = StructuralObject.SetValidValue(value, false);
+                _name = StructuralObject.SetValidValue(value, false, "name");
                 ReportPropertyChanged("name");
                 OnnameChanged();
             }
@@ -217,7 +217,7 @@ namespace CogNetworks
             {
                 Onprincipal_idChanging(value);
                 ReportPropertyChanging("principal_id");
-                _principal_id = StructuralObject.SetValidValue(value);
+                _principal_id = StructuralObject.SetValidValue(value, "principal_id");
                 ReportPropertyChanged("principal_id");
                 Onprincipal_idChanged();
             }
@@ -243,7 +243,7 @@ namespace CogNetworks
                 {
                     Ondiagram_idChanging(value);
                     ReportPropertyChanging("diagram_id");
-                    _diagram_id = StructuralObject.SetValidValue(value);
+                    _diagram_id = StructuralObject.SetValidValue(value, "diagram_id");
                     ReportPropertyChanged("diagram_id");
                     Ondiagram_idChanged();
                 }
@@ -268,7 +268,7 @@ namespace CogNetworks
             {
                 OnversionChanging(value);
                 ReportPropertyChanging("version");
-                _version = StructuralObject.SetValidValue(value);
+                _version = StructuralObject.SetValidValue(value, "version");
                 ReportPropertyChanged("version");
                 OnversionChanged();
             }
@@ -292,7 +292,7 @@ namespace CogNetworks
             {
                 OndefinitionChanging(value);
                 ReportPropertyChanging("definition");
-                _definition = StructuralObject.SetValidValue(value, true);
+                _definition = StructuralObject.SetValidValue(value, true, "definition");
                 ReportPropertyChanged("definition");
                 OndefinitionChanged();
             }
@@ -303,7 +303,6 @@ namespace CogNetworks
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -329,7 +328,7 @@ namespace CogNetworks
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -348,7 +347,7 @@ namespace CogNetworks
                 {
                     OnidChanging(value);
                     ReportPropertyChanging("id");
-                    _id = StructuralObject.SetValidValue(value);
+                    _id = StructuralObject.SetValidValue(value, "id");
                     ReportPropertyChanged("id");
                     OnidChanged();
                 }
@@ -373,7 +372,7 @@ namespace CogNetworks
             {
                 OnnetworkChanging(value);
                 ReportPropertyChanging("network");
-                _network = StructuralObject.SetValidValue(value);
+                _network = StructuralObject.SetValidValue(value, "network");
                 ReportPropertyChanged("network");
                 OnnetworkChanged();
             }
@@ -397,7 +396,7 @@ namespace CogNetworks
             {
                 OnstartNodeChanging(value);
                 ReportPropertyChanging("startNode");
-                _startNode = StructuralObject.SetValidValue(value);
+                _startNode = StructuralObject.SetValidValue(value, "startNode");
                 ReportPropertyChanged("startNode");
                 OnstartNodeChanged();
             }
@@ -421,7 +420,7 @@ namespace CogNetworks
             {
                 OnendNodeChanging(value);
                 ReportPropertyChanging("endNode");
-                _endNode = StructuralObject.SetValidValue(value);
+                _endNode = StructuralObject.SetValidValue(value, "endNode");
                 ReportPropertyChanged("endNode");
                 OnendNodeChanged();
             }
@@ -445,7 +444,7 @@ namespace CogNetworks
             {
                 OnlinkWeightChanging(value);
                 ReportPropertyChanging("linkWeight");
-                _linkWeight = StructuralObject.SetValidValue(value);
+                _linkWeight = StructuralObject.SetValidValue(value, "linkWeight");
                 ReportPropertyChanged("linkWeight");
                 OnlinkWeightChanged();
             }
@@ -456,7 +455,6 @@ namespace CogNetworks
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -482,7 +480,7 @@ namespace CogNetworks
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -501,7 +499,7 @@ namespace CogNetworks
                 {
                     OnidChanging(value);
                     ReportPropertyChanging("id");
-                    _id = StructuralObject.SetValidValue(value);
+                    _id = StructuralObject.SetValidValue(value, "id");
                     ReportPropertyChanged("id");
                     OnidChanged();
                 }
@@ -526,7 +524,7 @@ namespace CogNetworks
             {
                 OnnetworkChanging(value);
                 ReportPropertyChanging("network");
-                _network = StructuralObject.SetValidValue(value);
+                _network = StructuralObject.SetValidValue(value, "network");
                 ReportPropertyChanged("network");
                 OnnetworkChanged();
             }
@@ -550,7 +548,7 @@ namespace CogNetworks
             {
                 OnnodeChanging(value);
                 ReportPropertyChanging("node");
-                _node = StructuralObject.SetValidValue(value);
+                _node = StructuralObject.SetValidValue(value, "node");
                 ReportPropertyChanged("node");
                 OnnodeChanged();
             }
@@ -561,10 +559,8 @@ namespace CogNetworks
 
         #endregion
 
-    
     }
 
     #endregion
 
-    
 }
